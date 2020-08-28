@@ -1,0 +1,61 @@
+= Openshift Spice Runner
+
+The Ansible Runner project to deploy operators and their related Custom Resources to OpenShift.
+
+== Example playbooks
+
+You can use few examples from https://github.com/kameshsampath/ansible-role-openshift-spices/tree/master/examples[examples], that allows  install and configure:
+
+- [*] Red Hat OpenShift Serverless both Serving and Eventing
+
+- [*] Red Hat OpenShift Pipelines
+
+- [*] https://argoproj.github.io/argo-cd/[Argo CD]
+
+- [*] Red Hat OpenShift Service Mesh
+
+- [*] https://strimzi.io[Strimzi Kafka]
+
+- [*] https://www.redhat.com/en/technologies/management/advanced-cluster-management[Red Hat Advanced Cluster Management for Kubernetes]
+
+- [ ] https://skupper.io[Skupper]
+
+- [*] https://camel.apache.org/docs/#camel-k[Apache Camel-K]
+
+- [*] https://www.eclipse.org/che/[Eclipse Che]
+
+== Running the play
+
+- Copy the needed play from https://github.com/kameshsampath/ansible-role-openshift-spices/tree/master/examples[examples] to project directory
+
+From the $PROJECT_HOME -- directory where you have cloned this repo --, run:
+
+[source,bash,subs="marcos+,+attributes]
+----
+./provision.sh [<playbook-file>]
+----
+
+If you dont pass the playbook file, it defaults to use a file called `playbook.yml` from $PROJECT_HOME/project directory.
+
+
+== Adding python modules
+
+Any python module that you need to install can added to the $PROJECT_HOME/requirements.txt, this file will be processed automatically before the play runs.
+
+== Adding extra roles and collections
+
+Any roles/collections that need to installed can be added to the PROJECT_HOME/requirements.yml, this file will be processed automatically before the play runs.
+
+Please check https://docs.ansible.com/ansible/latest/galaxy/user_guide.html#installing-roles-from-galaxy[Galaxy] guide for the structure of this file.
+
+== License
+
+https://github.com/kameshsampath/openshift-spice-runner/tree/master/LICENSE[Apache v2]
+
+== Author Information
+
+mailto:kamesh.sampath@hotmail.com[Kamesh Sampath]
+
+== Issues
+
+https://github.com/kameshsampath/openshift-spice-runner/issues[Issues]
