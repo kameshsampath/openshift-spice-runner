@@ -1,10 +1,8 @@
 = Openshift Spice Runner
 
-The Ansible Runner project to deploy operators and their related Custom Resources to OpenShift.
+The Ansible Runner project to deploy operators and their related Custom Resources to OpenShift. 
 
-== Example playbooks
-
-You can use few examples from https://github.com/kameshsampath/ansible-role-openshift-spices/tree/master/examples[examples], that allows  install and configure:
+The role https://github.com/kameshsampath/ansible-role-openshift-spices[OpenShift Spices], allows install and configure the following software components using operators:
 
 - [*] Red Hat OpenShift Serverless both Serving and Eventing
 
@@ -23,6 +21,10 @@ You can use few examples from https://github.com/kameshsampath/ansible-role-open
 - [*] https://camel.apache.org/docs/#camel-k[Apache Camel-K]
 
 - [*] https://www.eclipse.org/che/[Eclipse Che]
+
+== Example playbooks
+
+You can use few examples from https://github.com/kameshsampath/ansible-role-openshift-spices/tree/master/examples[examples].
 
 == Running the play
 
