@@ -17,3 +17,6 @@ inventory/**
 inventory/*
 !inventory/README.md
 !inventory/hosts.example
+project/*.yml
+!project/requirements.yml
+
