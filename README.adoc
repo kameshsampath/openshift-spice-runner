@@ -22,23 +22,37 @@ The role https://github.com/kameshsampath/ansible-role-openshift-spices[OpenShif
 
 - [*] https://www.eclipse.org/che/[Eclipse Che]
 
+== Pre-requisites
+
+- Docker for Mac or Windows (OR) Docker/podman for Linux
+
+== Clone sources
+
+[source,bash,subs="marcos+,+attributes]
+----
+git clone https://github.com/openshift-spice-runner
+export PROJECT_HOME=`pwd`/openshift-spice-runner
+----
+
 == Example playbooks
 
-You can use few examples from https://github.com/kameshsampath/ansible-role-openshift-spices/tree/master/examples[examples].
+You can use few examples from https://github.com/kameshsampath/ansible-role-openshift-spices/tree/master/examples[examples]. A copy of the same has been added to $PROJECT_HOME/project/examples.
 
 == Running the play
 
-- Copy the needed play from https://github.com/kameshsampath/ansible-role-openshift-spices/tree/master/examples[examples] to project directory
+- Copy the needed play from $PROJECT_HOME/project/examples to `$PROJECT_HOME/playbook.yml` directory.
 
-From the $PROJECT_HOME -- directory where you have cloned this repo --, run:
+From the $PROJECT_HOME run:
 
 [source,bash,subs="marcos+,+attributes]
 ----
 ./provision.sh [<playbook-file>]
 ----
 
-If you dont pass the playbook file, it defaults to use a file called `playbook.yml` from $PROJECT_HOME/project directory.
-
+[TIP]
+====
+If you maintain different plays, then you can have them in `$PROJECT_HOME/project` and then pass the file name as argument to `provision.sh` script as decribed earlier.
+====
 
 == Adding python modules
 
