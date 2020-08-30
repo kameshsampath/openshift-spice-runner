@@ -1,4 +1,4 @@
-# Kubernetes Demo Project Template
+# OpenShift Demo Project Template
 
 The Ansible Runner project to deploy operators and their related Custom Resources to OpenShift.
 
